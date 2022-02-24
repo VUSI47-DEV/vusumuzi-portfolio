@@ -1,0 +1,341 @@
+/* google fonts */
+/* @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Zen+Tokyo+Zoo&display=swap");
+
+/* Global */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #161616;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+ul {
+  list-style: none;
+  margin-top: 52rem;
+}
+li {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding-left: 1rem;
+}
+li > a {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+li:hover {
+  background-color: rgb(88, 88, 88);
+  transition: 0.5s;
+}
+.logo {
+  cursor: pointer;
+}
+.menu {
+  display: none;
+  transition: 0.5s;
+}
+.menu.show {
+  width: 250px;
+  height: 100rem;
+  background-color: rgb(32, 31, 31);
+  position: fixed;
+  right: 0;
+  display: block;
+  transition: 0.5s;
+}
+
+.burger {
+  /* display: none; */
+  cursor: pointer;
+}
+.burger-icon {
+  position: fixed;
+  text-align: right;
+  margin-left: 11rem;
+  z-index: 20;
+  margin-top: 48.9rem;
+  cursor: pointer;
+}
+.menu-items {
+  text-align: left;
+}
+
+/* home */
+#home {
+  width: 100%;
+  height: 100vh;
+  background: #161616;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-text {
+  font-family: "Zen Tokyo Zoo", cursive;
+  color: #fff;
+  text-align: center;
+  font-size: 96px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.arrow {
+  width: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+/* About */
+
+#about {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#cfcbcb, #898989);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+.about-heading {
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 96px;
+}
+.about-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  width: 65%;
+}
+.download-btn {
+  width: 20rem;
+  height: 4rem;
+  border-radius: 99px;
+  border: none;
+  background-color: #3d3d3d;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font: size 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.download-btn > a {
+  color: #fff;
+}
+.download-btn:hover {
+  background-color: #4e4e4e;
+}
+
+/* Technologies */
+
+#technologies {
+  width: 100%;
+  height: 105vh;
+  background: linear-gradient(#1d1d1d, #4d4d4d);
+  text-align: center;
+}
+.tech-icons {
+  width: 100px;
+  margin: 1rem;
+  transition: tranform 0.2s ease-in-out;
+}
+.tech-icons:hover {
+  transfrom: scale(1.2);
+}
+.row {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.skills-heading {
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 96px;
+  color: #fff;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+.content {
+  padding-top: 3rem;
+}
+
+/*  */
+/*  */
+/* projects section */
+#my-projects {
+  width: 100%;
+  height: 210vh;
+  background: linear-gradient(#131212, #272727);
+}
+.projects-heading {
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 96px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.card {
+  /* width: 30rem;
+  height: 15rem; */
+  /* background-color: hsl(0, 2%, 82%); */
+  border-radius: 10px;
+}
+.card-row-1,
+.card-row-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* padding: 3rem; */
+  text-align: center;
+}
+
+.pics {
+  width: 30rem;
+  height: 30rem;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.cta-btns {
+  width: 13.6rem;
+  height: 2.5rem;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  background-color: #323535;
+  color: #fff;
+  border-radius: 20px;
+}
+.cta-btns:hover {
+  background-color: #666666;
+  color: #131212;
+  transition: all 0.2s;
+}
+.cta-btns > a {
+  color: #fff;
+}
+.cta-btns > a:hover {
+  color: #131212;
+}
+
+/* CONTACT */
+#contact {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#cfcbcb, #898989);
+  text-align: center;
+}
+.contact-heading {
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 96px;
+}
+.info {
+  margin-top: 6rem;
+  border: 1px solid;
+  width: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.contact-icons {
+  width: 50px;
+}
+.email > a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #fff;
+}
+.phone > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+/*  */
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  .home-text {
+    font-size: 45px;
+    width: 70%;
+  }
+
+  /*  */
+  .about-paragraph {
+    font-size: 15px;
+    width: 65%;
+  }
+  .about-heading,
+  .skills-heading,
+  .projects-heading {
+    font-size: 76px;
+  }
+  /*  */
+  .tech-icons {
+    width: 40px;
+  }
+  .tech-name {
+    font-size: 12px;
+  }
+  /*  */
+  .card-row-1,
+  .card-row-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pics {
+    width: 20rem;
+    height: 20rem;
+  }
+  .cta-btns {
+    width: 8.5rem;
+  }
+  #my-projects {
+    height: 290vh;
+  }
+  /*  */
+  /*  */
+  .email > a {
+    font-size: 18px;
+  }
+  .phone > p {
+    font-size: 18px;
+  }
+  .info {
+    width: 70%;
+  }
+}
