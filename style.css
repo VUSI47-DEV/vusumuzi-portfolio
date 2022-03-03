@@ -1,5 +1,4 @@
 /* google fonts */
-/* @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Zen+Tokyo+Zoo&display=swap");
 
 /* Global */
@@ -256,6 +255,7 @@ p {
 .contact-heading {
   font-family: "Zen Tokyo Zoo", cursive;
   font-size: 96px;
+  margin-top:2rem;
 }
 .info {
   margin-top: 6rem;
